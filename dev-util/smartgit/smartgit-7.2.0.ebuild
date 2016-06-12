@@ -9,7 +9,7 @@ PN_PRETTY="SmartGIT"
 
 DESCRIPTION="Git client with support for GitHub Pull Requests+Comments, SVN and Mercurial"
 HOMEPAGE="http://www.syntevo.com/smartgit"
-SRC_URI="http://www.syntevo.com/static/smart/download/smartgit/${PN}-linux-${PV//./_}.tar.gz"
+SRC_URI="http://www.syntevo.com/static/smart/download/smartgit/${PN}-linux-7.2-preview-9.tar.gz"
 
 SLOT="0"
 LICENSE="smartgit"
@@ -18,7 +18,7 @@ KEYWORDS="~amd64 ~x86"
 RESTRICT="mirror strip"
 
 RDEPEND="
-	>=virtual/jre-1.7:1.7
+	>=virtual/jre-1.8:1.8
 	|| ( dev-vcs/git dev-vcs/mercurial )
 "
 
