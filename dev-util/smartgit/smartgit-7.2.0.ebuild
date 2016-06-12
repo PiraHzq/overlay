@@ -34,7 +34,8 @@ src_install() {
 	insinto "$install_dir"
 	doins -r .
 
-	fperms a+x "$install_dir/"{bin,lib}/*.sh
+	fperms a+x "$install_dir/"bin/{add-menuitem,remove-menuitem,smartgit}.sh
+	fperms a+x "$install_dir/"lib/{askpass,ff-merge,format-patch,git-forward-merge,smartssh,ssh}.sh
 
 	dosym "$install_dir/bin/smartgit.sh" "/usr/bin/${PN}"
 
