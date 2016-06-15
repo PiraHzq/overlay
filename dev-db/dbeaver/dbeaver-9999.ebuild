@@ -2,11 +2,11 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
-inherit eutils subversion java-pkg-2 java-ant-2
+inherit eutils git-r3 java-pkg-2 java-ant-2
 
 DESCRIPTION="Universal Database Manager"
 HOMEPAGE="http://dbeaver.jkiss.org/"
-ESVN_REPO_URI="https://svn.jkiss.org/dev/dbeaver/trunk/"
+EGIT_REPO_URI="https://github.com/serge-rider/dbeaver.git"
 KEYWORDS=""
 SRC_URI=""
 SLOT="0"
@@ -15,7 +15,7 @@ LICENSE="GPL-2"
 
 IUSE="firebird informix mssql mysql oracle postgres sybase"
 
-DEPEND=">=virtual/jdk-1.6:*"
+DEPEND=">=virtual/jdk-1.8:*"
 RDEPEND="
 	${DEPEND}
 	postgres? ( dev-java/jdbc-postgresql )
