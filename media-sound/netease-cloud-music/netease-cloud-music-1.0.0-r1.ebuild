@@ -70,9 +70,17 @@ src_install(){
 
   dodir /usr/bin
   exeinto /usr/bin
+  doexe ${FILESDIR}/${PN}
 
   dodir /usr/lib/${PN}
   exeinto /usr/lib/${PN}
   doexe ${S}/usr/lib/${PN}/chrome-sandbox
   doexe ${S}/usr/lib/${PN}/netease-cloud-music
+
+  # fix HiDPI screen display
+  if use hidpi; then
+    dodir /usr/lib/${PN}
+    exeinto /usr/lib/${PN}
+    doexe ${FILESDIR}/${PN}-hidpi
+  fi
 }
