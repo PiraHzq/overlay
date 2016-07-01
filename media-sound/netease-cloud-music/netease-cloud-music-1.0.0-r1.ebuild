@@ -12,7 +12,7 @@ SRC_URI="amd64? ( ${COMMON_URI}/${PN}_${PV}-${PR:1}_amd64_deepin15.deb )
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="gtkstyle hidpi"
+IUSE="gtkstyle"
 RESTRICT="mirror strip"
 
 RDEPEND=">=media-libs/alsa-lib-1.0.16
@@ -70,17 +70,9 @@ src_install(){
 
   dodir /usr/bin
   exeinto /usr/bin
-  doexe ${FILESDIR}/${PN}
 
   dodir /usr/lib/${PN}
   exeinto /usr/lib/${PN}
   doexe ${S}/usr/lib/${PN}/chrome-sandbox
   doexe ${S}/usr/lib/${PN}/netease-cloud-music
-
-  # fix HiDPI screen display
-  if use hidpi; then
-    dodir /usr/lib/${PN}
-    exeinto /usr/lib/${PN}
-    doexe ${FILESDIR}/${PN}-hidpi
-  fi
 }
