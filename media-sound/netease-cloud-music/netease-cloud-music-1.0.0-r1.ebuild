@@ -12,7 +12,7 @@ SRC_URI="amd64? ( ${COMMON_URI}/${PN}_${PV}-${PR:1}_amd64_deepin15.deb )
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="gtkstyle"
+IUSE="gtkstyle hidpi"
 RESTRICT="mirror strip"
 
 RDEPEND=">=media-libs/alsa-lib-1.0.16
