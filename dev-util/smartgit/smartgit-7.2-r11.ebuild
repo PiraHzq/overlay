@@ -9,7 +9,7 @@ PN_PRETTY="SmartGIT"
 
 DESCRIPTION="Git client with support for GitHub Pull Requests+Comments, SVN and Mercurial"
 HOMEPAGE="http://www.syntevo.com/smartgit"
-SRC_URI="http://www.syntevo.com/static/smart/download/smartgit/${PN}-linux-7.2-preview-9.tar.gz"
+SRC_URI="http://www.syntevo.com/static/smart/download/smartgit/${PN}-linux-${PV}-preview-${PR:1}.tar.gz"
 
 SLOT="0"
 LICENSE="smartgit"
