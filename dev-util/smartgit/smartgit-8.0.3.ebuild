@@ -9,11 +9,12 @@ PN_PRETTY="SmartGIT"
 
 DESCRIPTION="Git client with support for GitHub Pull Requests+Comments, SVN and Mercurial"
 HOMEPAGE="http://www.syntevo.com/smartgit"
-SRC_URI="http://www.syntevo.com/static/smart/download/smartgit/${PN}-linux-${PV}-rc-${PR:1}.tar.gz"
+MY_PV=$(replace_all_version_separators '_')
+SRC_URI="http://www.syntevo.com/static/smart/download/smartgit/${PN}-linux-${MY_PV}.tar.gz"
 
 SLOT="0"
 LICENSE="smartgit"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 
 RESTRICT="mirror strip"
 
