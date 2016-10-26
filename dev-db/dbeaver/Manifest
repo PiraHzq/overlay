@@ -1,4 +1,4 @@
-DIST dbeaver-ce-3.7.4-linux.gtk.x86.tar.gz 36779870 SHA256 b63129c240e00a1e5841577ca9701890b7948d0f97d0b810909bdcc2889c8173
-DIST dbeaver-ce-3.7.4-linux.gtk.x86_64.tar.gz 36923929 SHA256 a542ef44b823ce354ca254f1201ba13925612db8e998675db0914f8f4cd033fb
 DIST dbeaver-ce-3.7.6-linux.gtk.x86.tar.gz 36851573 SHA256 b3d12f58ca20c1ee9af1f7f3086bd317e7fffcb13ebd74cd3fe0bbc82d56f9bb
 DIST dbeaver-ce-3.7.6-linux.gtk.x86_64.tar.gz 36996041 SHA256 b6b8b1d2673eb4608844eaa1abc02fb15f99d2b129e55fbe831e60cc45f374f9
+DIST dbeaver-ce-3.7.7-linux.gtk.x86.tar.gz 37004733 SHA256 273a4e6b9f39c4e2a198af3f8f33ce5bdb7cfd1fe00685cb66a13c7b569447ac
+DIST dbeaver-ce-3.7.7-linux.gtk.x86_64.tar.gz 37149684 SHA256 7bed4a676dabe9882554e56a90c38f8ee5fe66ac685128fda48956b2b63bd933
